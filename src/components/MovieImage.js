@@ -2,11 +2,8 @@ import React from 'react';
 import './component.css';
 
 const MovieImage = (props) => {
-    return(
-        <div>
-            <img alt="movie_poster" src={props.path}/>
-        </div>
-    );
+    return <img className="movie-image" alt="movie_poster" src={props.path}/>;
+
 }
 
 export default MovieImage;

@@ -20,16 +20,17 @@ class App extends React.Component {
 
 		// finds the movie poster path of the searched movie
 		const config = await moviedb.get('/configuration');
-		const posterPath = config.data.images.base_url + '/original' + this.state.movie.poster_path;
+		const posterPath = config.data.images.base_url + 'w300' + this.state.movie.poster_path;
 		
 		this.setState({ img_path: posterPath });
-		//console.log(this.state.img_path);
+		console.log(response);
+		console.log(posterPath);
 	};
 
 	render() {
 		return (
 			<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin">
-				<div className="uk-card-media-left">
+				<div className="uk-card-media-left movie-image__container">
 					<MovieImage  path={this.state.img_path}/>
 				</div>
 				<div className="movie-details__container">
