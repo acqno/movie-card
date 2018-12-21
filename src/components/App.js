@@ -1,10 +1,13 @@
 import React from 'react';
 import SearchBar from './SearchBar';
+import MovieDetail from './MovieDetail';
 import moviedb from '../apis/moviedb';
 
 class App extends React.Component {
 	state = { movie: [] };
 
+	// this call back method takes the user input search title and searches the moviedb api 
+	// it returns the data in a .json object that we store in variable response
 	onTitleSubmit = async (term) => {
 		const response = await moviedb.get('/search/movie', {
 			params: {
@@ -12,19 +15,21 @@ class App extends React.Component {
 			}
 		});
 
-
+		this.setState({ movie: response });
+		console.log(this.state.movie);
 	};
 
 	render() {
 		return (
 			<div className="uk-container uk-container-large">
-				<SearchBar onTitleSubmit={this.onTitleSubmit} />
+
 				<div className="movie-details__container">
+					<MovieDetail />
+				</div>
+				<div className="movie-poster__container">
 
 				</div>
-				<div classname="movie-poster__container">
-
-				</div>
+				<SearchBar onTitleSubmit={this.onTitleSubmit} />
 			</div>
 		);
 	}

@@ -1,9 +1,13 @@
 .uk-container {
     border: 1px solid lightgray;
-    margin: 1rem;
+    margin: 1rem auto;
     height: 25rem;
     display: flex;
     flex-direction: row;
+}
+
+.movie-details__container {
+    
 }
 
 .search-container {
