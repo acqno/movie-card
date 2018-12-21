@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 import MovieDetail from './MovieDetail';
+import MovieImage from './MovieImage';
 import moviedb from '../apis/moviedb';
 
 class App extends React.Component {
@@ -27,9 +28,9 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className="uk-container uk-container-large movie-card">
-				<div className="movie-poster__container">
-
+			<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin">
+				<div className="uk-card-media-left">
+					<MovieImage  path={this.state.img_path}/>
 				</div>
 				<div className="movie-details__container">
 					<MovieDetail movie={this.state.movie} />

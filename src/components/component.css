@@ -1,9 +1,10 @@
-.uk-container {
+.uk-card {
     background-color: #37474F;
     border: 1px solid lightgray;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     margin: 1rem auto;
-    height: 25rem;
+    height: 30.1rem;
+    max-width: 942px;
     display: flex;
     flex-direction: row;
 }
