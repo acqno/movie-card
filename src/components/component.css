@@ -1,13 +1,17 @@
 .uk-container {
+    background-color: #37474F;
     border: 1px solid lightgray;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     margin: 1rem auto;
     height: 25rem;
     display: flex;
     flex-direction: row;
 }
 
-.movie-details__container {
-    
+.movie-details,
+.movie-title,
+.movie-release {
+    color: white;
 }
 
 .search-container {

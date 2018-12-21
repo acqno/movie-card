@@ -27,6 +27,7 @@ class SearchBar extends React.Component {
 						className="uk-search-input search-box"
 						type="text"
 						value={this.state.title}
+						placeholder="Search movie..."
 					/>
 				</form>
 			</div>
