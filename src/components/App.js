@@ -3,14 +3,16 @@ import SearchBar from './SearchBar';
 import moviedb from '../apis/moviedb';
 
 class App extends React.Component {
+	state = { movie: [] };
 
-
-	onTitleSubmit = (term) => {
-		moviedb.get('/search/movie', {
+	onTitleSubmit = async (term) => {
+		const response = await moviedb.get('/search/movie', {
 			params: {
 				query: term
 			}
 		});
+
+
 	};
 
 	render() {
