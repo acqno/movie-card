@@ -15,7 +15,7 @@ class App extends React.Component {
 			}
 		});
 
-		this.setState({ movie: response });
+		this.setState({ movie: response.data.results[0] });
 		console.log(this.state.movie);
 	};
 
@@ -24,7 +24,7 @@ class App extends React.Component {
 			<div className="uk-container uk-container-large">
 
 				<div className="movie-details__container">
-					<MovieDetail />
+					<MovieDetail title={this.state.movie} />
 				</div>
 				<div className="movie-poster__container">
 

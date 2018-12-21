@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MovieDetail = (props) => {
-    return(
+    return (
         <div>
             <h1 className="movie-title">Movie Title</h1>
             <h3 className="movie-release">12 - 21 - 2018</h3>
