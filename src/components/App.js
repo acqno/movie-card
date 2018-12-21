@@ -24,7 +24,7 @@ class App extends React.Component {
 			<div className="uk-container uk-container-large">
 
 				<div className="movie-details__container">
-					<MovieDetail title={this.state.movie} />
+					<MovieDetail movie={this.state.movie} />
 				</div>
 				<div className="movie-poster__container">
 
