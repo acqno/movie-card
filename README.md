@@ -7,6 +7,10 @@ It renders a movie card component to the browser and prompts the user to search 
 ### Example
 ![Sample card](https://i.imgur.com/41ZBknX.png)
 
+### Future Improvements
+    - loading splash screen
+    - update search bar 
+    - add more details for movie card eg. ratings, genre
+    - implement watch list where users can create a list of movies to watch
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
