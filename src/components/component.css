@@ -23,10 +23,10 @@ hmtl, body {
 }
 
 .movie-details {
-    margin: 2rem 1rem;
+    margin: 3.5rem 2.5rem;
     padding: 2rem;
     height: 75%;
-    width: 25rem;
+    width: 40rem;
     border: 1px solid whitesmoke;
 }
 
