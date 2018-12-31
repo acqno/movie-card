@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 hmtl, body {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .uk-card {
@@ -35,7 +38,6 @@ hmtl, body {
 .movie-image__container {
    height: 450px;
    width: 300px;
-   background-color: rgb(48, 53, 83);
 }
 
 .movie-image {
