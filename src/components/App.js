@@ -29,16 +29,17 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin">
-				<div className="uk-card-media-left movie-image__container">
-					<MovieImage  path={this.state.img_path}/>
-				</div>
-				<div className="movie-details__container">
-					<MovieDetail movie={this.state.movie} />
-				</div>
-				
+			<div>
 				<SearchBar onTitleSubmit={this.onTitleSubmit} />
-			</div>
+				<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" >
+					<div className="uk-card-media-left movie-image__container">
+						<MovieImage  path={this.state.img_path}/>
+					</div>
+					<div className="movie-details__container">
+						<MovieDetail movie={this.state.movie} />
+					</div>
+				</div>
+			</div>	
 		);
 	}
 }

@@ -16,12 +16,12 @@ class SearchBar extends React.Component {
 
 	render() {
 		return (
-			<div className="search-container">
+			<div className="uk-container search-container">
 				<form
 					onSubmit={this.onFormSubmit}
 					className="uk-search uk-search-default"
 				>
-					<span uk-search-icon='true' />
+					<span uk-search-icon></span>
 					<input
 						onChange={this.onInputChange}
 						className="uk-search-input search-box"
