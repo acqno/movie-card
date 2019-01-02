@@ -3,9 +3,10 @@ import SearchBar from './SearchBar';
 import MovieDetail from './MovieDetail';
 import MovieImage from './MovieImage';
 import moviedb from '../apis/moviedb';
+import Loader from './Loader';
 
 class App extends React.Component {
-	state = { movie: [], img_path: '' };
+	state = { movie: [], img_path: '', loader: true };
 
 	// this call back method takes the user input search title and searches the moviedb api 
 	// it returns the data in a .json object that we store in variable response
@@ -16,6 +17,7 @@ class App extends React.Component {
 			}
 		});
 
+		this.setState({ loader: false });
 		this.setState({ movie: response.data.results[0] });
 
 		// finds the movie poster path of the searched movie
@@ -23,8 +25,8 @@ class App extends React.Component {
 		const posterPath = config.data.images.base_url + 'w300' + this.state.movie.poster_path;
 		
 		this.setState({ img_path: posterPath });
-		console.log(response);
-		console.log(posterPath);
+		
+		console.log(this.state.movie);
 	};
 
 	render() {
@@ -32,11 +34,14 @@ class App extends React.Component {
 			<div>
 				<SearchBar onTitleSubmit={this.onTitleSubmit} />
 				<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" >
+					<div className="loading-container">
+						<Loader spin={this.state.loader}/>
+					</div>
 					<div className="uk-card-media-left movie-image__container">
-						<MovieImage  path={this.state.img_path}/>
+						<MovieImage path={this.state.img_path} render={this.state.loader}/>
 					</div>
 					<div className="movie-details__container">
-						<MovieDetail movie={this.state.movie} />
+						<MovieDetail movie={this.state.movie} render={this.state.loader} />
 					</div>
 				</div>
 			</div>	
