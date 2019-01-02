@@ -26,7 +26,7 @@ hmtl, body {
     margin: 1rem 1rem;
     padding: 2rem;
     vertical-align: middle;
-    height: 81%;
+    height: 94%;
     width: auto;
     border: 1px solid whitesmoke;
 }
@@ -46,7 +46,7 @@ hmtl, body {
 }
 
 .movie-image__container {
-   height: 450px;
+   height: 448px;
    width: 300px;
 }
 
