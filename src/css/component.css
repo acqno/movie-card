@@ -57,11 +57,6 @@ hmtl, body {
     object-fit: cover;
 }
 
-.loading-container {
-    height: 100%;
-    width: 100%;
-}
-
 .loader-screen {
     width: 100%;
     height: inherit;

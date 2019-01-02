@@ -1,6 +1,7 @@
 // this component takes the movie details passed from the App componnent and renders it to the page
 
 import React from 'react';
+import '../css/component.css';
 
 const MovieDetail = (props) => {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './component.css';
+import '../css/component.css';
 
 const MovieImage = (props) => {
     if(props.render === true) {

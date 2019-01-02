@@ -1,9 +1,10 @@
 import React from 'react';
-import SearchBar from './SearchBar';
-import MovieDetail from './MovieDetail';
-import MovieImage from './MovieImage';
-import moviedb from '../apis/moviedb';
-import Loader from './Loader';
+import SearchBar from './components/SearchBar';
+import MovieDetail from './components/MovieDetail';
+import MovieImage from './components/MovieImage';
+import moviedb from './apis/moviedb';
+import Loader from './components/Loader';
+import './css/component.css';
 
 class App extends React.Component {
 	state = { movie: [], img_path: '', loader: true };
@@ -34,9 +35,7 @@ class App extends React.Component {
 			<div>
 				<SearchBar onTitleSubmit={this.onTitleSubmit} />
 				<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" >
-					<div className="loading-container">
-						<Loader spin={this.state.loader}/>
-					</div>
+						<Loader spin={this.state.loader}/> 					
 					<div className="uk-card-media-left movie-image__container">
 						<MovieImage path={this.state.img_path} render={this.state.loader}/>
 					</div>
