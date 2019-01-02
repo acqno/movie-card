@@ -6,7 +6,11 @@ const MovieImage = (props) => {
         return null;
     }
 
-    return <img className="movie-image" alt="movie_poster" src={props.path}/>;
+    return(
+        <div className="movie-image__container">
+            <img className="movie-image" alt="movie_poster" src={props.path}/>
+        </div>
+    );
 }
 
 export default MovieImage;

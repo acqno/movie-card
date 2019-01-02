@@ -35,8 +35,9 @@ class App extends React.Component {
 			<div>
 				<SearchBar onTitleSubmit={this.onTitleSubmit} />
 				<div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" >
-						<Loader spin={this.state.loader}/> 					
-					<div className="uk-card-media-left movie-image__container">
+					<Loader spin={this.state.loader} />
+
+					<div className="uk-card-media-left">
 						<MovieImage path={this.state.img_path} render={this.state.loader}/>
 					</div>
 					<div className="movie-details__container">

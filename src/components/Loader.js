@@ -8,7 +8,7 @@ const Loader = (props) => {
     return(
         <div className="ui segment loader-screen">
             <div className="ui active dimmer">
-                <div className="ui text loader">Loading</div>
+                <div className="ui text loader">Enter movie to search...</div>
             </div>
         </div>
     );
