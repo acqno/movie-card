@@ -8,12 +8,8 @@ hmtl, body {
 .uk-card {
     background-color: #37474F;
     border: 1px solid lightgray;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    margin: 1rem auto;
-    height: 450px;
-    max-width: 942px;
-    display: flex;
-    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
 }
 
 .movie-details,
@@ -32,9 +28,9 @@ hmtl, body {
 }
 
 .search-container {
-    border: 1px solid lightgray;
-    margin: 1rem auto;
-    width: 40rem;
+    
+    
+    width: 100vw;
     text-align: center;
 }
 
@@ -48,6 +44,7 @@ hmtl, body {
 .movie-image__container {
    height: 448px;
    width: 300px;
+   margin: 0 auto;
 }
 
 .movie-image {
@@ -60,4 +57,21 @@ hmtl, body {
 .loader-screen {
     width: 100%;
     height: inherit;
+}
+
+@media (min-width: 40rem) {
+    .uk-card {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        margin: 1rem auto;
+        height: 450px;
+        max-width: 942px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .search-container {
+        width: 40rem;
+        margin: 1rem auto;
+        border: 1px solid lightgray;
+    }
 }
