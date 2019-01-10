@@ -9,7 +9,7 @@ hmtl, body {
     background-color: #37474F;
     border: 1px solid lightgray;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 .movie-details,
@@ -28,17 +28,17 @@ hmtl, body {
 }
 
 .search-container {
-    
-    
     width: 100vw;
     text-align: center;
 }
 
 .search-box {
-    margin: 1rem 0;
+    margin-top: 1rem;
     width: 90%;
-    height: 2rem;
+    height: 2.5rem;
     padding: 5px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
 }
 
 .movie-image__container {
@@ -73,5 +73,10 @@ hmtl, body {
         width: 40rem;
         margin: 1rem auto;
         border: 1px solid lightgray;
+    }
+    
+    .search-box {
+        margin: 1rem 0;
+        width: 98%;
     }
 }
