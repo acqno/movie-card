@@ -12,7 +12,8 @@ const MovieDetail = (props) => {
     return (
         <div className="movie-details">
             <h1 className="movie-title">{props.movie.title}</h1>
-            <h3 className="movie-release">{props.movie.release_date}</h3>
+            <h3 className="movie-release">Release date: {props.movie.release_date}</h3>
+            <h3 className="movie-voteaverage">Rating: {props.movie.vote_average}</h3>
             <p className="movie-overview">{props.movie.overview}</p>
         </div>
     );

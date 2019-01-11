@@ -27,7 +27,8 @@ class App extends React.Component {
 		
 		this.setState({ img_path: posterPath });
 		
-		console.log(this.state.movie);
+		//console.log(this.state.movie);
+		//console.log(response.data);
 	};
 
 	render() {
