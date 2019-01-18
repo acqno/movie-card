@@ -21,7 +21,7 @@ class SearchBar extends React.Component {
 					onSubmit={this.onFormSubmit}
 					className="uk-search uk-search-default"
 				>
-					<span uk-search-icon></span>
+					<span uk-icon="icon: search"></span>
 					<input
 						onChange={this.onInputChange}
 						className="uk-search-input search-box"

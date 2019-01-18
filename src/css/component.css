@@ -34,7 +34,7 @@ h1, h3, p {
     margin-top: 1rem;
     width: 90%;
     height: 2.5rem;
-    padding: 5px;
+    padding: 15px;
     border-radius: 15px;
     border: 1px solid lightgray;
 }
@@ -55,6 +55,12 @@ h1, h3, p {
 .loader-screen {
     width: 100%;
     height: inherit;
+}
+
+input[type=text]:focus {
+    border: 1px solid rgba(28, 110, 235, 0.7);
+    outline: none;
+    -webkit-appearance: none;
 }
 
 @media (min-width: 40rem) {
